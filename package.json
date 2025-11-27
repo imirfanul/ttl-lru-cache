@@ -1,22 +1,38 @@
 {
 	"name": "ttl-lru-cache",
 	"version": "1.0.0",
+	"description": "A lightweight O(1) TTL LRU Cache with Decorator support",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md"
+	],
 	"scripts": {
 		"build": "tsc",
-		"test": "ts-node tests/demo.ts"
+		"test": "ts-node tests/demo.ts",
+		"prepublishOnly": "npm run build"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/imirfanul/ttl-lru-cache.git"
+	},
+	"bugs": {
+		"url": "https://github.com/imirfanul/ttl-lru-cache/issues"
+	},
+	"homepage": "https://github.com/imirfanul/ttl-lru-cache#readme",
+	"keywords": [
+		"lru",
+		"cache",
+		"ttl",
+		"typescript",
+		"decorator"
+	],
+	"author": "Md Irfanul Alam <your-email@example.com>",
+	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "^20.19.25",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.9.3"
-	},
-	"directories": {
-		"test": "test"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": ""
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.0",
+		"@types/node": "^20.0.0"
+	}
 }

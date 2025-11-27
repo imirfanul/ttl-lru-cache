@@ -1,4 +1,27 @@
 
+# TTL LRU Cache
+A lightweight, high-performance in-memory caching library for Node.js and TypeScript. It combines a **Hash Map** with a **Doubly Linked List** to ensure **O(1)** performance for all operations.
+
+Includes support for **Time-To-Live (TTL)** expiration, **Least Recently Used (LRU)** eviction, and **Method Decorators** for effortless caching in class-based services.
+## Features
+
+* **O(1) Complexity:** Constant time for `get`, `set`, and eviction.
+* **Dual Eviction Strategy:**
+    * **LRU:** Removes the least recently accessed item when capacity is reached.
+    * **TTL:** Automatically expires items after a specified duration (Lazy expiration).
+* **TypeScript Native:** Written in TS with full Generic `<K, V>` support.
+* **Event Driven:** Emits events when items are evicted (useful for telemetry).
+* **@Cacheable Decorator:** AOP-style caching for class methods (Services, Repositories).
+
+
+## Installation
+
+Install ttl-lru-cache with npm
+
+```bash
+  npm install ttl-lru-cache
+```
+    
 # Usage / Examples
 
 
@@ -178,3 +201,7 @@ async function decoratorDemo() {
   await decoratorDemo();
 })();
 ````
+## 📄 License
+
+MIT
+
