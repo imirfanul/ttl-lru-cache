@@ -1,0 +1,22 @@
+{
+	"name": "ttl-lru-cache",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "ts-node tests/demo.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.19.25",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	},
+	"directories": {
+		"test": "test"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
